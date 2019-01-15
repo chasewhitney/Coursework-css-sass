@@ -13,6 +13,22 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+      <div class="navigation">
+        <input type="checkbox" class="navigation__check-box" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#" class="navigation__link">About Natours</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Your benefits</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+          </ul>
+        </nav>
+      </div>
         <header class="header">
           <div class=header__logo-box>
             <img src="img/logo-white.png" alt="Logo" class="header__logo"  />
@@ -24,7 +40,7 @@
               <span class="heading-primary--sub">Is Where Life Happens</span>
             </h1>
 
-            <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+            <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
           </div>
 
         </header>
@@ -109,7 +125,7 @@
             </div>
           </section>
 
-          <section class="section-tours">
+          <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
               <h2 class="heading-secondary">
                 Most popular tours
@@ -142,7 +158,7 @@
                         <p class="card__price-only">Only</p>
                         <p class="card__price-value">$297</p>
                       </div>
-                      <a href="#" class="btn btn--white">Book now!</a>
+                      <a href="#popup" class="btn btn--white">Book now!</a>
                     </div>
                   </div>
                 </div>
@@ -173,7 +189,7 @@
                         <p class="card__price-only">Only</p>
                         <p class="card__price-value">$497</p>
                       </div>
-                      <a href="#" class="btn btn--white">Book now!</a>
+                      <a href="#popup" class="btn btn--white">Book now!</a>
                     </div>
                   </div>
                 </div>
@@ -204,7 +220,7 @@
                         <p class="card__price-only">Only</p>
                         <p class="card__price-value">$897</p>
                       </div>
-                      <a href="#" class="btn btn--white">Book now!</a>
+                      <a href="#popup" class="btn btn--white">Book now!</a>
                     </div>
                   </div>
                 </div>
@@ -344,6 +360,24 @@
           </div>
 
         </footer>
+
+        <div class="popup" id="popup">
+          <div class="popup__content">
+            <div class="popup__left">
+              <img src="img/nat-8.jpg" class="popup__img" alt="Tour photo">
+              <img src="img/nat-9.jpg" class="popup__img" alt="Tour photo">
+            </div>
+            <div class="popup__right">
+              <a href="#section-tours" class="popup__close">&times;</a>
+              <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+              <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+              <p class="popup__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero. At risus viverra adipiscing at in tellus integer feugiat. Odio euismod lacinia at quis risus sed vulputate. Potenti nullam ac tortor vitae. Placerat duis ultricies lacus sed turpis. Velit aliquet sagittis id consectetur purus. Tortor at risus viverra adipiscing at in tellus integer feugiat. Nec nam aliquam sem et tortor consequat. Eget nulla facilisi etiam dignissim diam quis enim. Sociis natoque penatibus et magnis dis. Commodo sed egestas egestas fringilla. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
+              </p>
+              <a href="#" class="btn btn--green">Book now</a>
+            </div>
+          </div>
+        </div>
 
         <!--
         <section class="grid-test">
